@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  dev01:
+    build: 
+      context: ./dev01/
+
+  dev02:
+    build: 
+      context: ./dev02/
