@@ -14,7 +14,7 @@ services:
         source: vo-dev
         target: /workspace
       - type: bind
-        source: ./src
+        source: /tmp/build
         target: /build
 
   dev01:
