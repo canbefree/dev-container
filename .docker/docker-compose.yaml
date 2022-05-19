@@ -10,7 +10,7 @@ services:
       - dev-net
     volumes:
       - vo-dev:/workspace:rw
-      - ../build:/build:ro
+      - ../build:/build:rw
 
   
   dev01:
