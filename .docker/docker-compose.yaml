@@ -8,9 +8,18 @@ services:
     command: sleep infinity
     networks:
       - dev-net
+
     volumes:
       - vo-dev:/workspace:rw
-      - ../build:/build:rw
+      - type: volume
+        source: vo-dev
+        target: /workspace:rw
+
+      - type: bind
+        source: ../build
+        target: /build
+
+      
 
   
   dev01:
