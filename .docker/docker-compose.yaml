@@ -14,7 +14,7 @@ services:
         source: vo-dev
         target: /workspace
       - type: bind
-        source: ../build
+        source: ~/data/test
         target: /build
 
   dev01:
