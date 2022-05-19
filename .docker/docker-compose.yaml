@@ -10,18 +10,13 @@ services:
       - dev-net
 
     volumes:
-      - vo-dev:/workspace:rw
       - type: volume
         source: vo-dev
-        target: /workspace:rw
-
+        target: /workspace
       - type: bind
-        source: ../build
+        source: ./
         target: /build
 
-      
-
-  
   dev01:
     build: 
       context: ./dev01/
