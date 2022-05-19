@@ -9,7 +9,7 @@ services:
     networks:
       - dev-net
     volumes:
-      - vo-dev:/workspace:ro
+      - vo-dev:/workspace:rw
 
   
   dev01:
