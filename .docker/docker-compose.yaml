@@ -27,4 +27,3 @@ volumes:
 
 networks:
   dev-net:
-    driver: custom
