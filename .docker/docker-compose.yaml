@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  workspace:
+    image: buildpack-deps:bullseye-scm
+    command: sleep infinity
+    networks:
+      - dev-net
+    volumes:
+      - vo-dev:/workspace:ro
+    
+  
   dev01:
     build: 
       context: ./dev01/
@@ -11,3 +20,11 @@ services:
     build: 
       context: ./dev02/
     command: sleep infinity
+
+volumes:
+  vo-dev:
+
+
+networks:
+  dev-net:
+    driver: custom
