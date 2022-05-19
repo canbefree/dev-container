@@ -1,3 +1,3 @@
 FROM python
 
-VOLUME [ "/datavo" ]
+COPY /workspace ~

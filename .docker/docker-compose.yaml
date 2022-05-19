@@ -16,6 +16,8 @@ services:
     build: 
       context: ./dev01/
     command: sleep infinity
+    volumes:
+      - vo-dev:/workspace:rw
 
     
   dev02:
