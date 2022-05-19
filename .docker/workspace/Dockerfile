@@ -1,6 +1,6 @@
 FROM buildpack-deps:bullseye-scm as build 
 
-COPY . . 
+COPY .. . 
 
 RUN echo 'build' >> ~/1.txt
 
