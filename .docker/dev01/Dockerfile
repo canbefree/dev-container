@@ -1,3 +1,3 @@
 FROM python
 
-COPY /workspace ~
+RUN cat "hello,world" >> /workspace/1.txt
