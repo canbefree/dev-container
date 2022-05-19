@@ -2,13 +2,16 @@ version: '3.8'
 
 services:
   workspace:
-    image: buildpack-deps:bullseye-scm
+    build:
+      context: ./workspace
+      target: development
+
     command: sleep infinity
     networks:
       - dev-net
     volumes:
       - vo-dev:/workspace:ro
-    
+
   
   dev01:
     build: 
